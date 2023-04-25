@@ -117,8 +117,10 @@
 <body>
 	<h1>Logical OR Gate</h1>
 	<p>
-		This is a representation of a logical OR gate applied to two classical bits.	
-	</p>
+		An “OR Gate” is another type of Digital Logic Gate. Unlike an “AND Gate”, it would produce an output that is true if any of the inputs are also true.	</p>
+	<p>
+		This is a representation of an “OR Gate”. Try clicking on the bits on the right side, then click “OR“ and watch what you get for the outcome on the left side.	</p>
+
 	<div class="container"> 
 		<div class="bit zero" id="bit1" onclick="toggleBit('bit1')">0</div>
 		<div class="bit zero" id="bit2" onclick="toggleBit('bit2')">0</div>
@@ -126,9 +128,7 @@
 		<div class="bit zero" id="result">0</div>
 	</div>
 	
-	<p>
-		An OR gate is another type of logic gate that takes two or more inputs and produces a single output. However, unlike the AND gate, the OR gate produces an output that is true if at least one of the input signals is true	
-	</p>
+
 	<script>
 		function toggleBit(id) {
 			var element = document.getElementById(id);

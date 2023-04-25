@@ -134,12 +134,14 @@
 <body>
 	<h1>Qubit and Hadamard Gate</h1>
 	<p>This is a simple representation of a qubit and a Hadamard gate. Drag the qubit into the left box to make it disappear and reappear in the right box.</p>
+	<p> The Hadamard gate is often represented as the letter "H" that gives an equal chance for the qubit to be in either 0 or 1 states. 
+		In other words, it puts the qubit in a state of superposition, where it has an equal probability of being in either state when it is measured. 
 	<div class="qubit" id="qubit" draggable="true" ondragstart="drag(event)" onclick="toggleBit(this)">0</div>
 	<div class="left-box box" id="left-box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 	<div class="right-box box" id="right-box"></div>
 	<div class="gate zero" id="hadamard">H</div>
 	<div class="branch" id="branch"></div>
-
+	
 	<script>
 		var isSuperposition = false;
 		var initialState = 0;
@@ -234,11 +236,12 @@
 
 	</script>
 	<button onclick="resetQubit()" style="position: absolute; top: 10px; right: 10px;">Reset</button>
-
+ 
 	<div class="arrow-container">
 		<a href="OR_gate.html" class="arrow">&larr;</a>
 		<a href="CNOT1.html" class="arrow">&rarr;</a>	
 	</div>
+
 	<p class="arrow-text"> Click arrows to navigate pages</p>
 	
 </body>

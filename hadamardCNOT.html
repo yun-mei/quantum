@@ -192,7 +192,7 @@
 	</style>
 </head>
 <body>
-	<h1>Qubits and CNOT Gate</h1>
+	<h1>Qubits, Hadamard and CNOT Gate</h1>
 	<p>Now you can see a Hadamard gate and CNOT gate along with two qubits. Entangling two qubits is actually very easy. You pass the control through the Hadamard and then through the CNOT. Then you pass the target qubit through the CNOT gate. When you see both qubits in superposition you'll know that they're entangled. Reset and entangle the qubits a few more times and make sure to record the results from the measurements. It should become quickly apparent that the entangled qubits will never be in the same state when measured. This is pretty spooky stuff becuase it means qubits can somehow be seemingly connected in such a way that measuring one affects the measurement of the other. This configuration of a Hadamard gate and CNOT gate is a quantum circuit that creates what is called a Bell state or EPR pair. These Bell states represent maximally entangled pure states for a qubit and are very important building blocks for more complex concepts in quantum computing. Bell states are also the basis for quantum teleportation, superdense coding, cryptography and more.</p>
 	<div class="qubit control zero" id="control-qubit" data-top="40%" draggable="true" ondragstart="drag(event)" onclick="toggleBit(this)">0</div>
 	<div class="qubit target zero" id="target-qubit" data-top="60%" draggable="true" ondragstart="drag(event)" onclick="toggleBit(this)">0</div>

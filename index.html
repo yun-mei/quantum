@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Quantum Physics Experiment</title>
+	<title>Quantum Computing Experiment</title>
 	<style>
 		body {
 			background-color: #f5f5f5;
@@ -9,7 +9,7 @@
 			font-size: 18px;
 			line-height: 1.5;
 			margin: 0;
-			padding: 0;
+			padding: 10;
 		}
 
 		h1 {
@@ -72,30 +72,12 @@
 	</style>
 </head>
 <body>
-	<h1>Quantum Physics Experiment</h1>
-	<p>This is a classical bit, which can exist in either 0 or 1.</p>
-	<p>Think of it like like “true or false”, where 1 is true and 0 is false.</p>
-	<p> Click on the box to see what happens </p>
-
-	<div class="container">
-		<div class="bit zero" onclick="toggleBit(this)">0</div>
-	</div>
+	<body>
+		<h1>Quantum Computing Experiment</h1>
+		<p>In this experiment you will be walked through concepts in both classical and quantum computing. By the end you should understand why the behavior of qubits has been called "spooky" by the likes of Albert Einstein. You will be guided through an explanation of classical and quantum computing as well as the creation of a simple quantum circuit that produces examples of superposition and entanglement. Click the arrow at the bottom of the page to start! </p>
 	
-	<script>
-		function toggleBit(element) {
-			if (element.classList.contains('zero')) {
-				element.classList.remove('zero');
-				element.classList.add('one');
-				element.innerHTML = '1';
-			} else {
-				element.classList.remove('one');
-				element.classList.add('zero');
-				element.innerHTML = '0';
-			}
-		}
-	</script>
 
-	<a href="AND_gate.html" class="arrow">&#10132;</a>
+	<a href="classical.html" class="arrow">&#10132;</a>
 	<p class="arrow-text">Click the arrow to move to the next page.</p>
 </body>
 </html>
